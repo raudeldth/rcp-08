@@ -1,15 +1,5 @@
 package main
 
-/*
-**Agregar calificación de una materia**: Pedir el nombre
-del alumno, materia y su correspondiente calificación,
-para posteriormente invocar por `RPC` la función para
-Agregar la calificación de un alumno por materia.
-
-La información deberá de ser almacenada en estructuras de
-datos (slice, map, listas, etc) sin usar un gestor de base de datos. Así como construir las estructuras necesarias.
-*/
-
 import (
     "fmt"
     "net"
@@ -18,7 +8,6 @@ import (
 )
 
 type SERVER int
-//// mapa de materias
 var materias = make(map[string]map[string]float64)
 var alumnos = make(map[string]map[string]float64)
 
